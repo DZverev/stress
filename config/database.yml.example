@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: stress
+  pool: 5
+  username: stress
+  password: stress
+  host: localhost
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: stress_test
+  pool: 5
+  username: stress
+  password: stress
+  host: localhost
+  timeout: 5000
