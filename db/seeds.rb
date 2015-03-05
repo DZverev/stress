@@ -8,13 +8,13 @@
 
 
 puts 'Generate authors'
-10000.times do |i|
+100000.times do |i|
   Author.generate
   puts "Done #{i}" if i % 1000 == 0
 end
 
 puts 'Generate articles'
-10000.times do |i|
+100000.times do |i|
   Article.generate
   puts "Done #{i}" if i % 1000 == 0
 end
