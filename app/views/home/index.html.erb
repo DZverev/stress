@@ -3,5 +3,5 @@
 <% @articles.each do |article| %>
     <h2><%= article.title %></h2>
     <p><%= article.intro %></p>
-    <p>Authors: [put authors here]</p>
+    <p>Authors: <%=  article.authors.map { |author| author.name }.join(', ')  %></p>
 <% end %>
