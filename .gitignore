@@ -11,10 +11,19 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
-/config/database.html
+config/database.yml
 /.idea
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
 
+# Ignore Ruby's files
+.ruby-version
+.ruby-gemset
+
+# Ignore Docker-related files
+docker-compose.override.yml
+docker-compose.yml
+/docker/*
+.dockerignore
