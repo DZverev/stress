@@ -3,5 +3,11 @@
 <% @articles.each do |article| %>
     <h2><%= article.title %></h2>
     <p><%= article.intro %></p>
-    <p>Authors: <%=  article.authors.map { |author| author.name }.join(', ')  %></p>
+    <p class="authors">
+      Authors:
+      <span class="names"><%=  article.authors.map { |author| author.name }.join(', ')  %></span></p>
+    <div class="buttons">
+      <button class="name-sort">Sorting by name</button>
+      <button class="number-of-count-sort">Sorting by articles' number</button>
+    </div>
 <% end %>
