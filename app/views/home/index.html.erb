@@ -4,10 +4,12 @@
     <h2><%= article.title %></h2>
     <p><%= article.intro %></p>
     <p class="authors">
+      <% authors = article.authors%>
       Authors:
-      <span class="names"><%=  article.authors.map { |author| author.name }.join(', ')  %></span></p>
+      <span class="names"><%= authors.map { |author| author.name }.join(', ') %></span>
+    </p>
     <div class="buttons">
       <button class="name-sort">Sorting by name</button>
-      <button class="number-of-count-sort">Sorting by articles' number</button>
+      <button class="number-of-articles-sort" data-article-id="<%= article.id%> ">Sorting by articles' number</button>
     </div>
 <% end %>
